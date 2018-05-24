@@ -1,0 +1,14 @@
+# Python Generated Files
+*.pyc
+**/__pycache__/
+
+# IDE
+**/.vscode/
+**/.idea/
+
+# OS
+*.DS_Store
+
+# Virtual Environment
+**/env/
+**/venv/
