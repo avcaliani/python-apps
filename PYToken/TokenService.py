@@ -6,6 +6,7 @@ class Token:
     
     @staticmethod
     def generate_auth_token(uuid, expiration = 600):
+        # I'm defining by default token expiration time in 600 seconds
         serializer = Serializer(Token.APP_SECRET_KEY, expires_in = expiration)
         return serializer.dumps({ "uuid" : uuid })
 
