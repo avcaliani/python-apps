@@ -33,7 +33,7 @@ class Child(Parent):
         print("Child.__del__()")
 
 
-# Testing Parent
+# Testing
 Parent.whoami() # Static
 parent = Parent()
 parent.hello()
