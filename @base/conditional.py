@@ -1,10 +1,9 @@
-"""
-@author     Anthony Vilarim Caliani
-@github     github.com/avcaliani
-
-Operators:
-[ "<", ">", "<=", ">=", "==", "!=" "not", "and", "or" ] 
-"""
+#
+# @author     Anthony Vilarim Caliani
+# @github     github.com/avcaliani
+# 
+# Operators:
+# [ "<", ">", "<=", ">=", "==", "!=" "not", "and", "or" ] 
 
 age = 21
 

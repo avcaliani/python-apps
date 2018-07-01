@@ -3,17 +3,15 @@ from flask import Flask, jsonify, g # pip3 install flask
 from flask_httpauth import HTTPTokenAuth
 from TokenService import Token
 
-"""
-Fonts: 
-- https://blog.miguelgrinberg.com/post/restful-authentication-with-flask
-- https://github.com/miguelgrinberg/REST-auth/blob/master/api.py
-- https://flask-httpauth.readthedocs.io/en/latest/
-
-Request Header:
-"Authorization" : "SCHEME YOUR_TOKEN_VALUE"
-    -> Example:
-    "Authorization" : "Token eyJhbGciOiJIUzI1NiIsImlhdCI6MTUzMDE0NjE0NywiZXh"
-"""
+# Fonts: 
+# - https://blog.miguelgrinberg.com/post/restful-authentication-with-flask
+# - https://github.com/miguelgrinberg/REST-auth/blob/master/api.py
+# - https://flask-httpauth.readthedocs.io/en/latest/
+#
+# Request Header:
+# "Authorization" : "SCHEME YOUR_TOKEN_VALUE"
+#    -> Example:
+#    "Authorization" : "Token eyJhbGciOiJIUzI1NiIsImlhdCI6MTUzMDE0NjE0NywiZXh"
 
 app = Flask(__name__)
 auth = HTTPTokenAuth(scheme='Token')

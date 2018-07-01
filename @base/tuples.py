@@ -1,7 +1,7 @@
-"""
-@author     Anthony Vilarim Caliani
-@github     github.com/avcaliani
-"""
+#
+# @author     Anthony Vilarim Caliani
+# @github     github.com/avcaliani
+#
 
 tuple_one = ("Anthony", "Raquel", "Joe")
 tuple_two = (12, 13)

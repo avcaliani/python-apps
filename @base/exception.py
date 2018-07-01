@@ -1,7 +1,8 @@
-"""
-@author     Anthony Vilarim Caliani
-@github     github.com/avcaliani
-"""
+#
+# @author     Anthony Vilarim Caliani
+# @github     github.com/avcaliani
+#
+
 # Generic
 try:
     if name > 3:  # It will throw an exception!
