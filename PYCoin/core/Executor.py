@@ -1,10 +1,10 @@
-import entities.Coin
-import services.HttpService
 import re
+from entities.coin import Coin
+from services.http_service import Http
 
 class Executor:
     def __init__(self):
-        self.http = services.HttpService.Http()
+        self.http = Http()
         self.url = "https://api.coinmarketcap.com/v1/ticker/"
         self.coins = []
 
@@ -14,7 +14,7 @@ class Executor:
         array = self.http.get(url)
         del self.coins[:]
         for coin in array:
-            self.coins.append(entities.Coin.Coin(coin))
+            self.coins.append(Coin(coin))
 
         print("%d Coins Received!" % len(self.coins))
 

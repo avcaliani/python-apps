@@ -6,16 +6,16 @@ class Coin:
         self.name = json ['name']
         self.symbol = json ['symbol']
         self.rank = json ['rank']
-        self.priceUsd = json ['price_usd']
-        self.priceBtc = json ['price_btc']
-        self.volumeUsd24h = json ['24h_volume_usd']
-        self.marketCapUsd = json ['market_cap_usd']
-        self.availableSupply = json ['available_supply']
-        self.totalSupply = json ['total_supply']
-        self.percentChange1h = json ['percent_change_1h']
-        self.percentChange24h = json ['percent_change_24h']
-        self.percentChange7d = json ['percent_change_7d']
-        self.lastUpdated = json ['last_updated']
+        self.price_usd = json ['price_usd']
+        self.price_btc = json ['price_btc']
+        self.volume_usd_24h = json ['24h_volume_usd']
+        self.market_cap_usd = json ['market_cap_usd']
+        self.available_supply = json ['available_supply']
+        self.total_supply = json ['total_supply']
+        self.percent_change_1h = json ['percent_change_1h']
+        self.percent_change_24h = json ['percent_change_24h']
+        self.percent_change_7d = json ['percent_change_7d']
+        self.last_updated = json ['last_updated']
 
     def toString(self):
         ret = """
@@ -35,9 +35,9 @@ Percent Changed in 7 Days.: %s
 Last Updated..............: %s
             """ % (
                 self.id, self.name, self.symbol, self.rank,
-                self.priceUsd, self.priceBtc, self.volumeUsd24h,
-                self.marketCapUsd, self.availableSupply, self.totalSupply,
-                self.percentChange1h, self.percentChange24h, self.percentChange7d,
-                self.lastUpdated
+                self.price_usd, self.price_btc, self.volume_usd_24h,
+                self.market_cap_usd, self.available_supply, self.total_supply,
+                self.percent_change_1h, self.percent_change_24h, self.percent_change_7d,
+                self.last_updated
             )
         return ret

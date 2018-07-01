@@ -1,5 +1,5 @@
 import json
-import requests # $ pip3 install requests
+import requests  # pip3 install requests
 
 class Http:
     def get(self, url):

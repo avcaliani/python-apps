@@ -1,9 +1,8 @@
-import entities.Coin
-import core.Executor
+from core.executor import Executor
 
 class Main:
     def __init__(self):
-        self.executor = core.Executor.Executor()
+        self.ex = Executor()
 
     def run(self):
         print("Wellcome to PYCoin \\o/")
@@ -16,7 +15,7 @@ class Main:
                 break
             if command.strip() == "":
                 continue
-            self.executor.execute(command)
+            self.ex.execute(command)
 
 # RUNNING CODE
 Main().run()

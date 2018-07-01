@@ -1,5 +1,5 @@
 from flask import Flask # pip3 install flask
-from controllers.TaskController import TaskController
+from controllers.task_controller import TaskController
 
 app = Flask(__name__)
 
