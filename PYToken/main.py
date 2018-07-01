@@ -1,7 +1,7 @@
 import uuid
 from flask import Flask, jsonify, g # pip3 install flask
 from flask_httpauth import HTTPTokenAuth
-from TokenService import Token
+from token_service import Token
 
 # Fonts: 
 # - https://blog.miguelgrinberg.com/post/restful-authentication-with-flask
