@@ -1,3 +1,8 @@
+"""
+@author     Anthony Vilarim Caliani
+@github     github.com/avcaliani
+"""
+
 students = { "Anthony":20, "Raquel":20, "Nina": 18 }
 
 print(students)  # {'Anthony': 20, 'Raquel': 20, 'Nina': 18}
