@@ -46,3 +46,21 @@ child.hello()
 child.call_parent()
 
 print("-------------------------")
+
+"""
+OUTPUT
+anthony@MacBook:@base$ python3 inheritance.py
+
+The Boss!
+Parent.__init__()
+Parent.hello()
+-------------------------
+The Boss!
+Child.__init__()
+Parent.hello()
+Child.hello()
+Parent.call_parent()
+-------------------------
+Parent.__del__()
+Child.__del__()
+"""
