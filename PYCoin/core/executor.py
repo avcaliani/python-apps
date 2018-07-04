@@ -8,7 +8,7 @@ class Executor:
         self.url = "https://api.coinmarketcap.com/v1/ticker/"
         self.coins = []
 
-    def httpGet(self, url):
+    def http_get(self, url):
         print("Getting coins, please wait...")
 
         array = self.http.get(url)
@@ -31,14 +31,14 @@ class Executor:
 
         # Get Coins From Coin Market CAP API
         if cmd == "get coins":
-            self.httpGet(self.url)
+            self.http_get(self.url)
             return
 
         pattern = re.compile("get coins -n \d+")
         if pattern.match(cmd):
             try:
                 limit = int(re.sub(r"[^\d]", "", cmd))
-                self.httpGet(self.url + "?limit=%d" % limit)
+                self.http_get(self.url + "?limit=%d" % limit)
             except:
                 print("Please define a Integer number.")
             return
@@ -46,7 +46,7 @@ class Executor:
         # Show Captured Coins
         if cmd == "show coins":
             for coin in self.coins:
-                print(coin.toString())
+                print(coin.to_string())
             return
 
         pattern = re.compile("show coins -s \"\\w+\"")
@@ -57,7 +57,7 @@ class Executor:
 
             for coin in self.coins:
                 if coin.symbol == symbol:
-                    print(coin.toString())
+                    print(coin.to_string())
                     return
             print("Symbol '%s' not found!" % symbol)
             return

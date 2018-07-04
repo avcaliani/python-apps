@@ -17,7 +17,7 @@ def get_task(task_id):
 
 
 @TaskController.route('/tasks', methods=['POST'])
-def createTask():
+def create_task():
     if not request.json or not 'title' in request.json:
         abort(400)
     task = {

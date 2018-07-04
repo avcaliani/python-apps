@@ -17,7 +17,7 @@ class Coin:
         self.percent_change_7d = json ['percent_change_7d']
         self.last_updated = json ['last_updated']
 
-    def toString(self):
+    def to_string(self):
         ret = """
 Id........................: %s
 Name......................: %s
