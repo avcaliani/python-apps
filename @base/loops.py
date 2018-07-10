@@ -1,7 +1,5 @@
-#
 # @author     Anthony Vilarim Caliani
 # @github     github.com/avcaliani
-#
 
 students = ["Anthony", "Raquel", "Joe", "Nina"]
 fruits = ("Apple", "Banana", "Tomato")

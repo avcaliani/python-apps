@@ -1,7 +1,7 @@
-#
 # @author     Anthony Vilarim Caliani
 # @github     github.com/avcaliani
 # 
+# @Description
 # Operators:
 # [ "<", ">", "<=", ">=", "==", "!=" "not", "and", "or" ] 
 

@@ -1,7 +1,5 @@
-#
 # @author     Anthony Vilarim Caliani
 # @github     github.com/avcaliani
-#
 
 # Generic
 try:

@@ -1,7 +1,5 @@
-#
 # @author     Anthony Vilarim Caliani
 # @github     github.com/avcaliani
-#
 
 # Situation I
 sentence = "%s is 21 years old"
