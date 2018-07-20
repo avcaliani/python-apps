@@ -1,5 +1,7 @@
 # Python Repository
-By Anthony Vilarim Caliani [@avcaliani](https://github.com/avcaliani)
+By Anthony Vilarim Caliani
+
+ [![#](https://img.shields.io/badge/python-3-yellow.svg)](#) [![#](https://img.shields.io/badge/repository-updated-brightgreen.svg)](#)
 
 ## Repository Description
 This is my Python repository. Here you will find some stuffs that I've done with Python.
@@ -9,3 +11,7 @@ This is my Python repository. Here you will find some stuffs that I've done with
 - **PYCoin**: I've done a simple Python Application to learn how to make HTTP requests, how to work with JSON in Python and some other stuffs 😄
 - **PYService**: I've done a simple Python Application using Flask to create a REST Web Service.
 - **PYToken**: I've done a simple Python Application using Flask to create a REST Web Service, that has their endpoints authenticated by a token.
+
+---
+
+_You can find [@avcaliani](#) at [GitHub](https://github.com/avcaliani) or [GitLab](https://gitlab.com/avcaliani)._
