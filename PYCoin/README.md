@@ -1,8 +1,7 @@
-![#Python](https://img.shields.io/badge/Python-v3.6.4-yellow.svg) ![#PIP](https://img.shields.io/badge/pip3-v9.0.1-blue.svg)
-
 # PYCoin
+By Anthony Vilarim Caliani
 
-by [@avcaliani](https://github.com/avcaliani)
+ [![#](https://img.shields.io/badge/python-3-yellow.svg)](#) [![#](https://img.shields.io/badge/repository-updated-brightgreen.svg)](#)
 
 > This simple software makes some HTTP Requests to [Coin Market Cap API](https://coinmarketcap.com/api/) 
 
@@ -10,7 +9,7 @@ by [@avcaliani](https://github.com/avcaliani)
 
 ```sh
 # Run Script
-$ phyton3 Main.py
+$ phyton3 main.py
 ```
 
 ```sh
@@ -28,3 +27,7 @@ $ show coins -s "$SYMBOL"
 ```
 
 ### The End
+
+---
+
+_You can find [@avcaliani](#) at [GitHub](https://github.com/avcaliani) or [GitLab](https://gitlab.com/avcaliani)._
