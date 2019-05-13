@@ -8,6 +8,19 @@ def random(array_size):
         array.append(randint(1, 101))
     return array
 
+def population():
+    lines = open("population.csv").readlines()
+    x, y = [], []
+    for line in lines:
+        if line == lines[0]:
+            continue
+        data = line.split(";")
+        x.append(int(data[0]))
+        y.append(int(data[1]))
+    return {
+        "x": x, "y": y, "color": "#20bf6b"
+    }
+
 # Chart Data
 datasets = (
     {
