@@ -11,10 +11,10 @@ from token_service import Token
 # Request Header:
 # "Authorization" : "SCHEME YOUR_TOKEN_VALUE"
 #    -> Example:
-#    "Authorization" : "Token eyJhbGciOiJIUzI1NiIsImlhdCI6MTUzMDE0NjE0NywiZXh"
+#    "Authorization" : "Bearer eyJhbGciOiJIUzI1NiIsImlhdCI6MTUzMDE0NjE0NywiZXh"
 
 app = Flask(__name__)
-auth = HTTPTokenAuth(scheme='Token')
+auth = HTTPTokenAuth(scheme='Bearer')
 # You can change scheme, but it will affect your request token
 
 @app.route('/')
