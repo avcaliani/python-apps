@@ -6,13 +6,42 @@ By Anthony Vilarim Caliani
 ## Repository Description
 This is my Python repository. Here you will find some stuffs that I've done with Python.
 
+**Helpful Commands**
+```sh
+# How to create a virtual environment
+python3 -m venv env
+
+source env/bin/activate # Activate it
+deactivate              # Exit
+
+# How to freeze project dependencies
+pip freeze > requirements.txt
+
+# How to install project dependencies
+pip install -r requirements.txt
+```
+
 ## Repository Projects
 - **@base**: Here you will find Python basics like: loops, conditional, inheritance...
-- **PYCoin**: I've done a simple Python Application to learn how to make HTTP requests, how to work with JSON in Python and some other stuffs 😄
+- **PYChart**: Some experiments using chart ⚗️
+- **PYCoin**: I've done a simple Python Application to learn how to make HTTP requests, how to work with JSON in Python and some other stuff 😄
 - **PYService**: I've done a simple Python Application using Flask to create a REST Web Service.
 - **PYToken**: I've done a simple Python Application using Flask to create a REST Web Service, that has their endpoints authenticated by a token.
 
 ## Projects Map
+
+### PYChart
+```
+PYChart/
+├── biology.escherichia.fasta
+├── biology.human.fasta
+├── biology.py
+├── chart.py
+├── mock.py
+├── population.csv
+├── population.py
+└── requirements.txt
+```
 
 ### PYCoin
 ```
@@ -26,8 +55,9 @@ PYCoin/
 │   └── coin.py
 ├── main.py
 └── services
-    ├── __init__.py
-    └── http_service.py
+│   ├── __init__.py
+│   └── http_service.py
+└── requirements.txt
 ```
 
 ### PYService
@@ -37,14 +67,16 @@ PYService/
 ├── controllers
 │   ├── __init__.py
 │   └── task_controller.py
-└── main.py
+├── main.py
+└── requirements.txt
 ```
 
 ### PYToken
 ```
 PYToken/
 ├── main.py
-└── token_service.py
+├── token_service.py
+└── requirements.txt
 ```
 
 ---
