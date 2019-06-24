@@ -1,7 +1,7 @@
 # Python Repository
 By Anthony Vilarim Caliani
 
- [![#](https://img.shields.io/badge/python-3-yellow.svg)](#) [![#](https://img.shields.io/badge/repository-updated-brightgreen.svg)](#)
+ [![#](https://img.shields.io/badge/python-3-yellow.svg)](#)
 
 ## Repository Description
 This is my Python repository. Here you will find some stuffs that I've done with Python.
@@ -22,7 +22,6 @@ pip install -r requirements.txt
 ```
 
 ## Repository Projects
-- **@base**: Here you will find Python basics like: loops, conditional, inheritance...
 - **PYChart**: Some experiments using chart ⚗️
 - **PYCoin**: I've done a simple Python Application to learn how to make HTTP requests, how to work with JSON in Python and some other stuff 😄
 - **PYService**: I've done a simple Python Application using Flask to create a REST Web Service.
