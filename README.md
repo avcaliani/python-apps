@@ -1,4 +1,4 @@
-# Python Repository
+# 🐍 Python
 By Anthony Vilarim Caliani
 
  [![#](https://img.shields.io/badge/python-3-yellow.svg)](#)
