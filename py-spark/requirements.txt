@@ -1,0 +1,6 @@
+cffi==1.12.3
+numpy==1.16.4
+py4j==0.10.7
+pycparser==2.19
+pyspark==2.4.3
+six==1.12.0
