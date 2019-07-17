@@ -1,5 +1,8 @@
 import json
-import requests  # pip3 install requests
+import requests
+__author__  = 'Anthony Vilarim Caliani'
+__contact__ = 'https://github.com/avcaliani'
+__license__ = 'MIT'
 
 class Http:
     def get(self, url):

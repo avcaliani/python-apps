@@ -1,6 +1,9 @@
 import re
 from entities.coin import Coin
 from services.http_service import Http
+__author__  = 'Anthony Vilarim Caliani'
+__contact__ = 'https://github.com/avcaliani'
+__license__ = 'MIT'
 
 class Executor:
     def __init__(self):

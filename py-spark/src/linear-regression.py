@@ -4,6 +4,9 @@ from pyspark import SparkContext
 from pyspark.mllib.linalg import Vectors
 from pyspark.mllib.feature import Normalizer
 from pyspark.mllib.regression import LabeledPoint, LinearRegressionWithSGD
+__author__  = 'Anthony Vilarim Caliani'
+__contact__ = 'https://github.com/avcaliani'
+__license__ = 'MIT'
 
 FILE_PATH = f'{ path.dirname(path.abspath(__file__)) }/../data/lpsa.data.txt'
 NUM_ITERATIONS = 100

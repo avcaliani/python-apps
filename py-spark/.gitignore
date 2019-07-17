@@ -1,4 +1,13 @@
-venv/
-logs/
-.vscode/
-.idea/
+# Python
+venv
+__pycache__
+
+# OS
+*.DS_Store
+
+# IDE
+.vscode
+.idea
+
+# Others
+logs

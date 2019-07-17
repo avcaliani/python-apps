@@ -1,4 +1,11 @@
-# Model Reference: https://coinmarketcap.com/api/
+""""
+Model Reference: https://coinmarketcap.com/api/
+"""
+__author__  = 'Anthony Vilarim Caliani'
+__contact__ = 'https://github.com/avcaliani'
+__license__ = 'MIT'
+
+
 class Coin:
 
     def __init__(self, json):

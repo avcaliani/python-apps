@@ -1,4 +1,7 @@
 from pyspark import SparkContext
+__author__  = 'Anthony Vilarim Caliani'
+__contact__ = 'https://github.com/avcaliani'
+__license__ = 'MIT'
 
 file = "file:///opt/spark/README.md"  
 sc = SparkContext("local", "test_app")

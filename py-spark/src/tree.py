@@ -6,6 +6,9 @@ from pyspark.mllib.util import MLUtils
 from pyspark.mllib.linalg import Vectors
 from pyspark.mllib.feature import Normalizer
 from pyspark.mllib.regression import LabeledPoint
+__author__  = 'Anthony Vilarim Caliani'
+__contact__ = 'https://github.com/avcaliani'
+__license__ = 'MIT'
 
 FILE_PATH = f'{ path.dirname(path.abspath(__file__)) }/../data/tree.data.txt'
 CLASS_NUM = 3

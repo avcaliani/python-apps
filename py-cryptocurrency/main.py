@@ -1,4 +1,7 @@
 from core.executor import Executor
+__author__  = 'Anthony Vilarim Caliani'
+__contact__ = 'https://github.com/avcaliani'
+__license__ = 'MIT'
 
 class Main:
     def __init__(self):

@@ -2,6 +2,9 @@ import pandas
 import requests as http
 from bs4 import BeautifulSoup
 from util.log import info, error
+__author__  = 'Anthony Vilarim Caliani'
+__contact__ = 'https://github.com/avcaliani'
+__license__ = 'MIT'
 
 # CONSTANTS
 URL = 'https://www.basketball-reference.com/leagues/NBA_2018_totals.html'

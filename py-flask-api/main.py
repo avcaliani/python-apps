@@ -1,5 +1,8 @@
-from flask import Flask # pip3 install flask
+from flask import Flask
 from controllers.task_controller import TaskController
+__author__  = 'Anthony Vilarim Caliani'
+__contact__ = 'https://github.com/avcaliani'
+__license__ = 'MIT'
 
 app = Flask(__name__)
 

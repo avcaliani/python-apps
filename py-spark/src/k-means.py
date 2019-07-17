@@ -5,6 +5,9 @@ from pyspark import SparkContext
 from pyspark.mllib.clustering import KMeans, KMeansModel
 from pyspark.mllib.linalg import Vectors
 from pyspark.sql import *
+__author__  = 'Anthony Vilarim Caliani'
+__contact__ = 'https://github.com/avcaliani'
+__license__ = 'MIT'
 
 FILE_PATH = f'{ path.dirname(path.abspath(__file__)) }/../data/crimes.csv'
 

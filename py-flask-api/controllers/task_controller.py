@@ -1,4 +1,7 @@
 from flask import Blueprint, jsonify, abort, make_response, request
+__author__  = 'Anthony Vilarim Caliani'
+__contact__ = 'https://github.com/avcaliani'
+__license__ = 'MIT'
 
 TaskController = Blueprint('TaskController', __name__, template_folder='templates')
 
