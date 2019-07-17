@@ -1,9 +1,13 @@
-# @author     Anthony Vilarim Caliani
-# @github     github.com/avcaliani
-#
-# @see https://matplotlib.org/api/_as_gen/matplotlib.pyplot.plot.html
-import mock
+import data.mock as mock
 import matplotlib.pyplot as chart
+"""
+Further Information
+- https://matplotlib.org/api/_as_gen/matplotlib.pyplot.plot.html
+"""
+__author__  = 'Anthony Vilarim Caliani'
+__contact__ = 'https://github.com/avcaliani'
+__license__ = 'MIT'
+
 
 # Chart Personalization
 chart.title("Population Growth")

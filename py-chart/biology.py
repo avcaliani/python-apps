@@ -1,13 +1,18 @@
-# @author     Anthony Vilarim Caliani
-# @github     github.com/avcaliani
-#
-# @see https://matplotlib.org/api/_as_gen/matplotlib.pyplot.plot.html
-# @see https://www.ncbi.nlm.nih.gov/nuccore/M10098.1?report=fasta
-# @see https://www.ncbi.nlm.nih.gov/nuccore/NR_024570.1?report=fasta
+"""
+Further Information
+- https://matplotlib.org/api/_as_gen/matplotlib.pyplot.plot.html
+- https://www.ncbi.nlm.nih.gov/nuccore/M10098.1?report=fasta
+- https://www.ncbi.nlm.nih.gov/nuccore/NR_024570.1?report=fasta
+"""
+__author__  = 'Anthony Vilarim Caliani'
+__contact__ = 'https://github.com/avcaliani'
+__license__ = 'MIT'
+
 
 red = lambda value: f'\033[1;31;40m{value}\033[0m'
 green = lambda value: f'\033[1;32;40m{value}\033[0m'
 number_format = lambda value: red(f'- { -1 * value }') if value < 0 else f'+ {value}'
+
 
 def get_nucleotides():
     nucleotides, letters = {}, ['A', 'T', 'C', 'G', 'N']
@@ -15,6 +20,7 @@ def get_nucleotides():
         for y in letters:
             nucleotides[ x + y ] = 0
     return nucleotides
+
 
 def process(file):
     nucleotides = get_nucleotides()
@@ -24,8 +30,9 @@ def process(file):
         nucleotides[key] += 1
     return nucleotides
 
-bacterium = process('biology.escherichia.fasta')
-human = process('biology.human.fasta')
+
+bacterium = process('data/biology.escherichia.fasta')
+human = process('data/biology.human.fasta')
 
 # ---------------------------------
 #  OUTPUT

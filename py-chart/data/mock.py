@@ -1,15 +1,18 @@
-# @author     Anthony Vilarim Caliani
-# @github     github.com/avcaliani
 from random import randint
+__author__  = 'Anthony Vilarim Caliani'
+__contact__ = 'https://github.com/avcaliani'
+__license__ = 'MIT'
+
 
 def random(array_size):
     array = []
-    for i in range (0, array_size):
+    for _ in range (0, array_size):
         array.append(randint(1, 101))
     return array
 
+
 def population():
-    lines = open("population.csv").readlines()
+    lines = open("data/population.csv").readlines()
     x, y = [], []
     for line in lines:
         if line == lines[0]:
@@ -20,6 +23,7 @@ def population():
     return {
         "x": x, "y": y, "color": "#20bf6b"
     }
+
 
 # Chart Data
 datasets = (
