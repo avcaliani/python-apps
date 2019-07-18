@@ -1,12 +1,21 @@
 # 🐍 Python
 By Anthony Vilarim Caliani
 
- [![#](https://img.shields.io/badge/python-3-yellow.svg)](#)
+## Description
+This is my Python repository. Here you will find some stuffs that I've done using Python.
 
-## Repository Description
-This is my Python repository. Here you will find some stuffs that I've done with Python.
+## Projects
 
-**Helpful Commands**
+- 📊 **[py-chart](py-chart/README.md)** Some experiments using _Matplotlib_ to create charts.
+- 💵 **[py-cryptocurrency](py-cryptocurrency/README.md)**: App to learn about working with HTTP requests and JSON
+- 🌶 **[py-flask-api](py-flask-api/README.md)**: Very simple RESTful API using _Flask_
+- 🔒 **[py-secure-api](py-secure-api/README.md)**: Very simple RESTful API using _Flask_ and Token Authentication
+- 🌠 **[py-spark](py-spark/README.md)**: Some experiments using _PySpark_ lib
+- 🐣 **[py-tweet](py-tweet/README.md)**: App to learn about working with Twitter API.
+- 🧹 **[web-scraping](web-scraping/README.md)**: App to learn about Web Scraping using Python.
+
+## Helpful Commands
+
 ```sh
 # How to create a virtual environment
 python3 -m venv env
@@ -19,63 +28,6 @@ pip freeze > requirements.txt
 
 # How to install project dependencies
 pip install -r requirements.txt
-```
-
-## Repository Projects
-- **PYChart**: Some experiments using chart ⚗️
-- **PYCoin**: I've done a simple Python Application to learn how to make HTTP requests, how to work with JSON in Python and some other stuff 😄
-- **PYService**: I've done a simple Python Application using Flask to create a REST Web Service.
-- **PYToken**: I've done a simple Python Application using Flask to create a REST Web Service, that has their endpoints authenticated by a token.
-
-## Projects Map
-
-### PYChart
-```
-PYChart/
-├── biology.escherichia.fasta
-├── biology.human.fasta
-├── biology.py
-├── chart.py
-├── mock.py
-├── population.csv
-├── population.py
-└── requirements.txt
-```
-
-### PYCoin
-```
-PYCoin/
-├── README.md
-├── core
-│   ├── __init__.py
-│   └── executor.py
-├── entities
-│   ├── __init__.py
-│   └── coin.py
-├── main.py
-└── services
-│   ├── __init__.py
-│   └── http_service.py
-└── requirements.txt
-```
-
-### PYService
-```
-PYService/
-├── README.md
-├── controllers
-│   ├── __init__.py
-│   └── task_controller.py
-├── main.py
-└── requirements.txt
-```
-
-### PYToken
-```
-PYToken/
-├── main.py
-├── token_service.py
-└── requirements.txt
 ```
 
 ---
