@@ -54,7 +54,7 @@ pyspark
 
 ## Quick Start
 
-> 👉 Before run this script make sure that you have already created a Python 3 virtual environment (venv)
+> 👉 Before run this script make sure that you have already created a Python 3 virtual environment ;)
 
 ```sh
 # Execute "run.sh" script passing as argument the name of scprit file.
