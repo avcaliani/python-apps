@@ -8,7 +8,7 @@ App to learn about working with HTTP requests and JSON. In this project I'm usin
 
 ## Quick Start
 
-> 👉 Before run these scripts make sure that you are using a Python 3 virtual environment ;)
+> 👉 Before run this script make sure that you are using a Python 3 virtual environment ;)
 
 ```sh
 # Start App

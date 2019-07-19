@@ -2,29 +2,6 @@
 readonly APP_FILE=$1
 readonly LOG_FILE="app.log"
 
-python_install_dependency() {
-  source venv/bin/activate
-  pip install $1
-  pip freeze > requirements.txt
-  deactivate
-}
-
-python_uninstall_dependency() {
-  source venv/bin/activate
-  pip uninstall $1 -y
-  pip freeze > requirements.txt
-  deactivate
-}
-
-python_check_venv() {
-  if [ ! -d "./venv" ]; then
-    python3 -m venv venv
-    source venv/bin/activate
-    pip install -r requirements.txt
-    deactivate
-  fi
-}
-
 spark_run() {
 
   if [ ! -d "./logs" ]; then
@@ -42,6 +19,13 @@ spark_run() {
 
   deactivate
   echo "Done!"
+}
+
+check_venv() {
+  if [ ! -d "./venv" ]; then
+    echo "FATAL: Python 'venv' is missing, please check it first." >&2
+    exit 0
+  fi
 }
 
 check_installation() {
@@ -70,9 +54,5 @@ check_installation "python3"      "Python 3"
 check_installation "java"         "Java"
 check_installation "spark-submit" "Spark Submit"
 
-python_check_venv
-
-# TODO(avcaliani): python_install_dependency
-# TODO(avcaliani): python_uninstall_dependency
-
+check_venv
 spark_run

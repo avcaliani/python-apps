@@ -8,7 +8,7 @@ Very simple RESTful API using _Flask_ and Token Authentication.
 
 ## Quick Start
 
-> 👉 Before run these scripts make sure that you are using a Python 3 virtual environment ;)
+> 👉 Before run this script make sure that you are using a Python 3 virtual environment ;)
 
 ```sh
 # Start App
