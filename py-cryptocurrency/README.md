@@ -1,18 +1,19 @@
-# PYCoin
+# 💰 Py Cryptocurrency
 By Anthony Vilarim Caliani
 
- [![#](https://img.shields.io/badge/python-3-yellow.svg)](#) [![#](https://img.shields.io/badge/repository-updated-brightgreen.svg)](#)
+ [![#](https://img.shields.io/badge/licence-MIT-blue.svg)](#) [![#](https://img.shields.io/badge/python-3-yellow.svg)](#)
 
-> This simple software makes some HTTP Requests to [Coin Market Cap API](https://coinmarketcap.com/api/) 
+## Description
+App to learn about working with HTTP requests and JSON. In this project I'm using [Coin Market Cap API](https://coinmarketcap.com/api/).
 
-## Commands
+## Quick Start
 
-```sh
-# Run Script
-$ phyton3 main.py
-```
+> 👉 Before run these scripts make sure that you are using a Python 3 virtual environment ;)
 
 ```sh
+# Start App
+python main.py
+
 # Get some coins (Default is 100 Coins)
 $ get coins
 
@@ -25,8 +26,6 @@ $ show coins
 # Show Coin that is represented by $SYMBOL
 $ show coins -s "$SYMBOL"
 ```
-
-### The End
 
 ---
 

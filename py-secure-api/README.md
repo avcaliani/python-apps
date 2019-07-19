@@ -1,16 +1,35 @@
-# PYService
+# 🔒 Py Secure API
 By Anthony Vilarim Caliani
 
- [![#](https://img.shields.io/badge/python-3-yellow.svg)](#) [![#](https://img.shields.io/badge/repository-updated-brightgreen.svg)](#)
+[![#](https://img.shields.io/badge/licence-MIT-blue.svg)](#) [![#](https://img.shields.io/badge/python-3-yellow.svg)](#) [![#](https://img.shields.io/badge/flask-1.0.2-red.svg)](#)
 
-## Commands
+## Description
+Very simple RESTful API using _Flask_ and Token Authentication.
+
+## Quick Start
+
+> 👉 Before run these scripts make sure that you are using a Python 3 virtual environment ;)
 
 ```sh
-# Run Script
-$ phyton3 main.py
+# Start App
+python main.py
 ```
 
-### The End
+## API Usage
+```sh
+# Return your token ;)
+curl http://localhost:5000/api/token
+
+# Return User UUID based on Auth Token
+curl -H 'Authorization: Bearer $TOKEN' \
+     http://localhost:5000/api/user
+```
+
+## Related Links
+
+- [Blog: RESTful Authentication with Flask](https://blog.miguelgrinberg.com/post/restful-authentication-with-flask)
+- [Github: Rest Auth](https://github.com/miguelgrinberg/REST-auth/blob/master/api.py)
+- [Flask Docs: HTTP Auth](https://flask-httpauth.readthedocs.io/en/latest/)
 
 ---
 

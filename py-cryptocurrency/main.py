@@ -8,12 +8,12 @@ class Main:
         self.ex = Executor()
 
     def run(self):
-        print("Wellcome to PYCoin \\o/")
+        print("Wellcome to Py Cryptocurrency \\o/")
         print("Developed by Anthony Caliani (github.com/avcaliani)")
         print("Type 'help' to see commands list. If you want to exit type 'exit'")
 
         while True:
-            command = input("pycoin> ")
+            command = input("$ ")
             if command.strip() == "exit":
                 break
             if command.strip() == "":
