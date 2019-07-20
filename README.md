@@ -16,20 +16,23 @@ This is my Python repository. Here you will find some stuffs that I've done usin
 - 🐣 **[py-tweet](py-tweet/README.md)**: App to learn about working with Twitter API
 - 🧹 **[web-scraping](web-scraping/README.md)**: App to learn about Web Scraping using Python
 
-## Helpful Commands
+## Creating Python Virtual Environment
 
 ```sh
-# How to create a virtual environment
-python3 -m venv env
+# Creating "venv" folder
+python3 -m venv venv
 
-source env/bin/activate # Activate it
-deactivate              # Exit
+# Using python venv \o/
+source env/bin/activate
 
-# How to freeze project dependencies
+# Freezing project dependencies
 pip freeze > requirements.txt
 
-# How to install project dependencies
+# Installing project dependencies
 pip install -r requirements.txt
+
+# Exiting from python venv
+deactivate
 ```
 
 ---
