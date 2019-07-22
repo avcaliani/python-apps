@@ -1,4 +1,4 @@
-# 🧹 Web Scraping
+# 🐣 Py Tweet
 By Anthony Vilarim Caliani
 
 [![#](https://img.shields.io/badge/licence-MIT-blue.svg)](#) [![#](https://img.shields.io/badge/python-3-yellow.svg)](#) [![#](https://img.shields.io/badge/tweepy-3.8.0-brightgreen.svg)](#)
