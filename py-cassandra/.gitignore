@@ -132,4 +132,4 @@ dmypy.json
 .idea
 
 # Dev
-.data
+.db

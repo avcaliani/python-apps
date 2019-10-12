@@ -9,7 +9,7 @@ services:
     image: cassandra:3.11
     container_name: cassandra-node-01
     volumes:
-      - ./.data/node-01:/var/lib/cassandra/data
+      - .db/node-01:/var/lib/cassandra/data
       - ./cassandra/init.cql:/app/init-cassandra.cql
     ports:
       - 9042:9042
@@ -26,7 +26,7 @@ services:
     image: cassandra:3.11
     container_name: cassandra-node-02
     volumes:
-      - ./.data/node-02:/var/lib/cassandra/data
+      - .db/node-02:/var/lib/cassandra/data
       - ./cassandra/init.cql:/app/init-cassandra.cql
     ports:
       - 9043:9042

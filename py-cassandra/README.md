@@ -158,6 +158,7 @@ exit
 - [DockerHub: Cassandra](https://hub.docker.com/_/cassandra)
 - [Cassandra + Python (Tutorial)](https://towardsdatascience.com/getting-started-with-apache-cassandra-and-python-81e00ccf17c9)
 - [Cassandra G.U.I.](https://tableplus.com/)
+- [Posts Data Set](https://www.kaggle.com/thibalbo/techcrunch-posts-compilation/download)
 
 ---
 
