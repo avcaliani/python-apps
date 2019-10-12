@@ -1,20 +1,34 @@
 -- ----------------------------------------------------------------- --
 --  KEYSPACE                                                         --
 -- ----------------------------------------------------------------- --
-create keyspace py_data with replication = {'class': 'SimpleStrategy', 'replication_factor': 2};
-USE py_data;
+CREATE KEYSPACE py_cassandra_ks WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 2};
+USE py_cassandra_ks;
 
 -- ----------------------------------------------------------------- --
 --  TBL POSTS                                                        --
 -- ----------------------------------------------------------------- --
-CREATE TABLE posts (
-    id int, author text, title text, content text, published_at timestamp,
-    PRIMARY KEY(id, published_at, author)
-) WITH CLUSTERING ORDER BY(published_at DESC, author ASC);
+CREATE TABLE IF NOT EXISTS py_cassandra_ks.posts (
+    id text,
+    authors text,
+    date text,
+    analyzed boolean,
+    category text,
+    content text,
+    img_src text,
+    section text,
+    tags text,
+    title text,
+    topics text,
+    url text,
+    PRIMARY KEY(id, date, authors, analyzed)
+) WITH CLUSTERING ORDER BY(date DESC);
 
 -- ----------------------------------------------------------------- --
---  POSTS                                                            --
+--  TBL AUTHORS                                                      --
 -- ----------------------------------------------------------------- --
-INSERT INTO posts(id, author, title, content, published_at) VALUES (1, 'anthony', 'Post 01', 'Content 01', toTimestamp(now()));
-INSERT INTO posts(id, author, title, content, published_at) VALUES (2, 'joe',     'Post 02', 'Content 02', toTimestamp(now()));
-INSERT INTO posts(id, author, title, content, published_at) VALUES (3, 'nina',    'Post 03', 'Content 03', toTimestamp(now()));
+CREATE TABLE IF NOT EXISTS py_cassandra_ks.authors (
+    author text,
+    verified_posts int,
+    not_verified_posts int,
+    PRIMARY KEY(author, verified_posts, not_verified_posts)
+);
