@@ -20,8 +20,8 @@ CREATE TABLE IF NOT EXISTS py_cassandra_ks.posts (
     title text,
     topics text,
     url text,
-    PRIMARY KEY(id, date, authors, analyzed)
-) WITH CLUSTERING ORDER BY(date DESC);
+    PRIMARY KEY(id, analyzed, date, authors)
+) WITH CLUSTERING ORDER BY(analyzed ASC, date DESC);
 
 -- ----------------------------------------------------------------- --
 --  TBL AUTHORS                                                      --
