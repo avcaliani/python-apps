@@ -1,7 +1,7 @@
 # 👀 Py Cassandra
 By Anthony Vilarim Caliani
 
-[![#](https://img.shields.io/badge/licence-MIT-blue.svg)](#) [![#](https://img.shields.io/badge/docker-19.03.2-dodgerblue.svg)](#) [![#](https://img.shields.io/badge/docker--compose-1.24.1-blueviolet.svg)](#) [![#](https://img.shields.io/badge/python-3.7.x-yellow.svg)](#) [![#](https://img.shields.io/badge/cassandra-3.11-lightseagreen.svg)](#) 
+[![#](https://img.shields.io/badge/licence-MIT-blue.svg)](#) [![#](https://img.shields.io/badge/python-3.7.x-yellow.svg)](#) [![#](https://img.shields.io/badge/cassandra-3.11-lightseagreen.svg)](#) 
 
 ## Description
 Some experiments using _Cassandra_ database.
