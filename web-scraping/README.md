@@ -1,7 +1,7 @@
 # 🧹 Web Scraping
 By Anthony Vilarim Caliani
 
-[![#](https://img.shields.io/badge/licence-MIT-blue.svg)](#) [![#](https://img.shields.io/badge/python-3-yellow.svg)](#) [![#](https://img.shields.io/badge/beautiful--soup-4.7.1-brightgreen.svg)](#)
+[![#](https://img.shields.io/badge/licence-MIT-blue.svg)](#) [![#](https://img.shields.io/badge/python-3-yellow.svg)](#)
 
 ## Description
 App to learn about Web Scraping using Python and _beautiful-soup_ lib.
@@ -14,7 +14,3 @@ App to learn about Web Scraping using Python and _beautiful-soup_ lib.
 # Start App
 python main.py
 ```
-
----
-
-_You can find [@avcaliani](#) at [GitHub](https://github.com/avcaliani) or [GitLab](https://gitlab.com/avcaliani)._
