@@ -26,7 +26,3 @@ $ show coins
 # Show Coin that is represented by $SYMBOL
 $ show coins -s "$SYMBOL"
 ```
-
----
-
-_You can find [@avcaliani](#) at [GitHub](https://github.com/avcaliani) or [GitLab](https://gitlab.com/avcaliani)._
