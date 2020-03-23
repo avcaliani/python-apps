@@ -67,7 +67,3 @@ sh run.sh src/first.py
 ## Related Links
 - [Apache Spark: Official Website](https://spark.apache.org)
 - [Tutorials Point: PySpark - Quick Guide](https://www.tutorialspoint.com/pyspark/pyspark_quick_guide.htm)
-
----
-
-_You can find [@avcaliani](#) at [GitHub](https://github.com/avcaliani) or [GitLab](https://gitlab.com/avcaliani)._
