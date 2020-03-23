@@ -28,7 +28,3 @@ python src/data_ingestion.py
 ## Related Links
 - [Blog: Twitter Analytics](http://adilmoujahid.com/posts/2014/07/twitter-analytics/)
 - [Twitter 4 Devs](https://developer.twitter.com/)
-
----
-
-_You can find [@avcaliani](#) at [GitHub](https://github.com/avcaliani) or [GitLab](https://gitlab.com/avcaliani)._
