@@ -159,7 +159,3 @@ exit
 - [Cassandra + Python (Tutorial)](https://towardsdatascience.com/getting-started-with-apache-cassandra-and-python-81e00ccf17c9)
 - [Cassandra G.U.I.](https://tableplus.com/)
 - [Posts Data Set](https://www.kaggle.com/thibalbo/techcrunch-posts-compilation/download)
-
----
-
-_You can find [@avcaliani](#) at [GitHub](https://github.com/avcaliani) or [GitLab](https://gitlab.com/avcaliani)._
