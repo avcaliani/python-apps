@@ -1,7 +1,7 @@
 # 🔒 Py Secure API
 By Anthony Vilarim Caliani
 
-[![#](https://img.shields.io/badge/licence-MIT-blue.svg)](#) [![#](https://img.shields.io/badge/python-3-yellow.svg)](#) [![#](https://img.shields.io/badge/flask-1.0.2-red.svg)](#)
+[![#](https://img.shields.io/badge/licence-MIT-blue.svg)](#) [![#](https://img.shields.io/badge/python-3-yellow.svg)](#)
 
 ## Description
 Very simple RESTful API using _Flask_ and Token Authentication.
@@ -30,7 +30,3 @@ curl -H 'Authorization: Bearer $TOKEN' \
 - [Blog: RESTful Authentication with Flask](https://blog.miguelgrinberg.com/post/restful-authentication-with-flask)
 - [Github: Rest Auth](https://github.com/miguelgrinberg/REST-auth/blob/master/api.py)
 - [Flask Docs: HTTP Auth](https://flask-httpauth.readthedocs.io/en/latest/)
-
----
-
-_You can find [@avcaliani](#) at [GitHub](https://github.com/avcaliani) or [GitLab](https://gitlab.com/avcaliani)._
