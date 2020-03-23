@@ -1,7 +1,7 @@
 # 🌶 Py Flask API
 By Anthony Vilarim Caliani
 
-[![#](https://img.shields.io/badge/licence-MIT-blue.svg)](#) [![#](https://img.shields.io/badge/python-3-yellow.svg)](#) [![#](https://img.shields.io/badge/flask-1.0.2-red.svg)](#)
+[![#](https://img.shields.io/badge/licence-MIT-blue.svg)](#) [![#](https://img.shields.io/badge/python-3-yellow.svg)](#)
 
 ## Description
 Very simple RESTful API using _Flask_.
@@ -28,7 +28,3 @@ curl -d '{ "title": "New Task", "description": "Awesome \\o/" }' \
      -H 'Content-Type: application/json' \
      -X POST http://localhost:5000/tasks
 ```
-
----
-
-_You can find [@avcaliani](#) at [GitHub](https://github.com/avcaliani) or [GitLab](https://gitlab.com/avcaliani)._
