@@ -3,7 +3,6 @@ By Anthony Vilarim Caliani
 
 [![#](https://img.shields.io/badge/licence-MIT-blue.svg)](#) [![#](https://img.shields.io/badge/python-3-yellow.svg)](#)
 
-## Description
 App to learn about Web Scraping using Python and _beautiful-soup_ lib.
 
 ## Quick Start
