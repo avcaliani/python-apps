@@ -7,14 +7,14 @@ This is my Python repository. Here you will find some stuffs that I've done usin
 
 ## Projects
 
-👀 **[py-cassandra](py-cassandra/README.md)**: Some experiments using _Cassandra_ database<br>
-📊 **[py-chart](py-chart/README.md)**: Some experiments using _Matplotlib_ to create charts<br>
-💰 **[py-cryptocurrency](py-cryptocurrency/README.md)**: App to learn about working with HTTP requests and JSON<br>
-🌶 **[py-flask-api](py-flask-api/README.md)**: Very simple RESTful API using _Flask_<br>
-🔒 **[py-secure-api](py-secure-api/README.md)**: Very simple RESTful API using _Flask_ and Token Authentication<br>
-🌠 **[py-spark](py-spark/README.md)**: Some experiments using _PySpark_ lib<br>
-🐣 **[py-tweet](py-tweet/README.md)**: App to learn about working with Twitter API<br>
-🧹 **[web-scraping](web-scraping/README.md)**: App to learn about Web Scraping using Python<br>
+- 👀 **[py-cassandra](py-cassandra/README.md)**: Some experiments using _Cassandra_ database
+- 📊 **[py-chart](py-chart/README.md)**: Some experiments using _Matplotlib_ to create charts
+- 💰 **[py-cryptocurrency](py-cryptocurrency/README.md)**: App to learn about working with HTTP requests and JSON
+- 🌶 **[py-flask-api](py-flask-api/README.md)**: Very simple RESTful API using _Flask_
+- 🔒 **[py-secure-api](py-secure-api/README.md)**: Very simple RESTful API using _Flask_ and Token Authentication
+- ⭐️ **[py-spark](py-spark/README.md)**: Some experiments using _PySpark_ lib
+- 🐣 **[py-tweet](py-tweet/README.md)**: App to learn about working with Twitter API
+- 🧹 **[web-scraping](web-scraping/README.md)**: App to learn about Web Scraping using Python
 
 ## Further Help
 
