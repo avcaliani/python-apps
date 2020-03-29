@@ -3,7 +3,6 @@ By Anthony Vilarim Caliani
 
 [![#](https://img.shields.io/badge/licence-MIT-blue.svg)](#) [![#](https://img.shields.io/badge/python-3-yellow.svg)](#)
 
-## Description
 Some experiments using _Matplotlib_ to create charts.
 
 ## Quick Start
