@@ -3,7 +3,6 @@ By Anthony Vilarim Caliani
 
 [![#](https://img.shields.io/badge/licence-MIT-blue.svg)](#) [![#](https://img.shields.io/badge/python-3.7.x-yellow.svg)](#) [![#](https://img.shields.io/badge/cassandra-3.11-lightseagreen.svg)](#) 
 
-## Description
 Some experiments using _Cassandra_ database.
 
 ## Quick Start
