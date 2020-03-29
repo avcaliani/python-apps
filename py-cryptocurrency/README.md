@@ -1,9 +1,8 @@
 # 💰 Py Cryptocurrency
 By Anthony Vilarim Caliani
 
- [![#](https://img.shields.io/badge/licence-MIT-blue.svg)](#) [![#](https://img.shields.io/badge/python-3-yellow.svg)](#)
+[![#](https://img.shields.io/badge/licence-MIT-blue.svg)](#) [![#](https://img.shields.io/badge/python-3-yellow.svg)](#)
 
-## Description
 App to learn about working with HTTP requests and JSON. In this project I'm using [Coin Market Cap API](https://coinmarketcap.com/api/).
 
 ## Quick Start
