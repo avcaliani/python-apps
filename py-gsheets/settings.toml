@@ -1,0 +1,9 @@
+# Google API
+GOOGLE_API_SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
+
+# Google Sheets
+SPREADSHEET_ID = '17yNZZxu6aMZ7jdITk9hhyb4EEQh3wH72tF3oBuvmkRY'
+SPREADSHEET_RANGE = 'A1:AA1000'
+
+# Data
+OUTPUT_PATH = 'data/'
