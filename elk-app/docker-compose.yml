@@ -1,0 +1,52 @@
+version: '3'
+services:
+
+  elasticsearch:
+    image: elasticsearch:7.12.0
+    container_name: elasticsearch
+    restart: always
+    ports: 
+      - 9200:9200
+      - 9300:9300
+    environment:
+      http.host: 0.0.0.0
+      discovery.type: single-node
+
+  # Kibana URL: http://localhost:5601
+  kibana:
+    image: kibana:7.12.0
+    container_name: kibana
+    restart: always
+    depends_on: 
+      - elasticsearch
+    ports: 
+      - 5601:5601
+    environment:
+      ELASTICSEARCH_HOSTS: "http://elasticsearch:9200"
+      XPACK_GRAPH_ENABLED: "true"
+      XPACK_WATCHER_ENABLED: "true"
+      XPACK_ML_ENABLED: "true"
+      XPACK_MONITORING_ENABLED: "true"
+      XPACK_MONITORING_UI_CONTAINER_ELASTICSEARCH_ENABLED: "true"
+
+  logstash:
+    image: logstash:7.12.0
+    container_name: logstash
+    restart: always
+    command: bin/logstash -f config/logstash-simple.conf
+    depends_on: 
+      - elasticsearch
+    environment:
+      "XPACK.MONITORING.ELASTICSEARCH.HOSTS": "http://elasticsearch:9200"
+    volumes: 
+      - ./logstash-simple.conf:/usr/share/logstash/config/logstash-simple.conf
+      - ./data:/opt/logs/py-app/
+
+  py-app:
+    image: python:3.8
+    container_name: py-app
+    restart: always
+    command: python /opt/py-app/main.py
+    volumes: 
+      - ./main.py:/opt/py-app/main.py
+      - ./data:/opt/logs/py-app/
