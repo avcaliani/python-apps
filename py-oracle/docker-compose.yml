@@ -1,0 +1,27 @@
+version: '3'
+services: 
+
+  oracle-db:
+    image: oracleinanutshell/oracle-xe-11g:latest
+    container_name: oracle-db
+    restart: always
+    ports:
+      - 1521:1521
+      - 5500:5500
+    environment:
+      ORACLE_SID: "xe"
+      ORACLE_ALLOW_REMOTE: "true"
+    volumes:
+      - .:/docker-entrypoint-initdb.d/
+
+  oracle-app:
+    image: oracle-app
+    container_name: oracle-app
+    build:
+      context: .
+    environment:
+      DB_HOST: "oracle-db"
+      DB_PORT: "1521"
+      DB_SID: "xe"
+      DB_USER: "system"
+      DB_PASSWORD: "oracle"
