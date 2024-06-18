@@ -1,0 +1,21 @@
+version: '3.1'
+
+services:
+
+  db:
+    image: postgres:13
+    restart: always
+    environment:
+      POSTGRES_USER: app-user
+      POSTGRES_PASSWORD: pass4app
+      POSTGRES_DB: postgres-app
+    ports:
+      - '5432:5432'
+    volumes:
+      - ./resources/init-db.sql:/docker-entrypoint-initdb.d/init-db.sql
+
+  adminer:
+    image: adminer:4-standalone
+    restart: always
+    ports:
+      - '8080:8080'
