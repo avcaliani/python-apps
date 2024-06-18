@@ -1,0 +1,41 @@
+version: '3.7'
+
+services:
+
+  # =~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=
+  #  CASSANDRA: NODE 01
+  # =~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=
+  cassandra-node-01:
+    image: cassandra:3.11
+    container_name: cassandra-node-01
+    volumes:
+      - .db/node-01:/var/lib/cassandra/data
+      - ./cassandra/init.cql:/app/init-cassandra.cql
+    ports:
+      - 9042:9042
+    environment:
+      - CASSANDRA_START_RPC=true
+      - CASSANDRA_CLUSTER_NAME=snake-cluster
+      - CASSANDRA_ENDPOINT_SNITCH=GossipingPropertyFileSnitch
+      - CASSANDRA_DC=snake-datacenter
+
+  # =~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=
+  #  CASSANDRA: NODE 02
+  # =~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=
+  cassandra-node-02:
+    image: cassandra:3.11
+    container_name: cassandra-node-02
+    volumes:
+      - .db/node-02:/var/lib/cassandra/data
+      - ./cassandra/init.cql:/app/init-cassandra.cql
+    ports:
+      - 9043:9042
+    command: bash -c 'sleep 60;  /docker-entrypoint.sh cassandra -f'
+    depends_on:
+      - cassandra-node-01
+    environment:
+      - CASSANDRA_START_RPC=true
+      - CASSANDRA_CLUSTER_NAME=snake-cluster
+      - CASSANDRA_ENDPOINT_SNITCH=GossipingPropertyFileSnitch
+      - CASSANDRA_DC=snake-datacenter
+      - CASSANDRA_SEEDS=cassandra-node-01
