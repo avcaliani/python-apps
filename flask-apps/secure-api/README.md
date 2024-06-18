@@ -1,7 +1,9 @@
-# 🔒 Py Secure API
+# 🔒 Flask - Secure API
+
 By Anthony Vilarim Caliani
 
-[![#](https://img.shields.io/badge/licence-MIT-blue.svg)](#) [![#](https://img.shields.io/badge/python-3-yellow.svg)](#)
+![#](https://img.shields.io/badge/licence-MIT-blue.svg)
+![#](https://img.shields.io/badge/python-3-yellow.svg)
 
 Very simple RESTful API using _Flask_ and Token Authentication.
 
@@ -15,6 +17,7 @@ python main.py
 ```
 
 ## API Usage
+
 ```sh
 # Return your token ;)
 curl http://localhost:5000/api/token
