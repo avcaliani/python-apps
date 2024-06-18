@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="chrome-extension://ckkdlimhmcjmikdlpkmbgfkaikojcbjk/themes/github.css" id="_theme">
+        <title>Web Sockets</title>
+    </head>
+    <body>
+        <h1>💬 WebSocket Chat</h1>
+        <form action="" onsubmit="sendMessage(event)">
+            <input type="text" id="messageText" autocomplete="off"/>
+            <button>Send</button>
+        </form>
+        <ul id='messages'></ul>
+        <script>
+            const API_URL = "ws://localhost:8000"
+            var ws = new WebSocket(`${API_URL}/ws`);
+            ws.onmessage = function(event) {
+                var messages = document.getElementById('messages')
+                var message = document.createElement('li')
+                var content = document.createTextNode(event.data)
+                message.appendChild(content)
+                messages.appendChild(message)
+            };
+            function sendMessage(event) {
+                var input = document.getElementById("messageText")
+                ws.send(input.value)
+                input.value = ''
+                event.preventDefault()
+            }
+
+            var wsUpdates = new WebSocket(`${API_URL}/ws/updates`);
+            wsUpdates.onmessage = function(event) {
+                received_at = new Date().toLocaleString("en-US")
+                console.log(`New message! Received at 👉 ${received_at}`)
+                console.log(event)
+            };
+        </script>
+    </body>
+</html>
