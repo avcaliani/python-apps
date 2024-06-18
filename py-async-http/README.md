@@ -1,6 +1,6 @@
 # 🌎 Async HTTP
 
-![License](https://img.shields.io/github/license/avcaliani/async-http?logo=apache&color=lightseagreen)
+![License](https://img.shields.io/github/license/avcaliani/python-apps?logo=apache&color=lightseagreen)
 ![#](https://img.shields.io/badge/python-3.10.x-3776AB.svg?logo=python&logoColor=white)
 
 ## Quick Start

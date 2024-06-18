@@ -1,8 +1,9 @@
-# 🐍 Python
+# 🐍 Python Apps
+
 By Anthony Vilarim Caliani
 
-![#](https://img.shields.io/badge/licence-MIT-blue.svg)
+![License](https://img.shields.io/github/license/avcaliani/python-apps?logo=apache&color=lightseagreen)
 ![#](https://img.shields.io/badge/python-3-yellow.svg)
 
-This is my Python repository. Here you will find some stuffs that I've done using Python.
-
+This is my Python random repository.  
+Here you will find some stuffs that I've done using Python like PoCs, experiments, etc.

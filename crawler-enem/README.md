@@ -1,6 +1,6 @@
 # 🕷️ Crawler Enem
 
-![License](https://img.shields.io/github/license/avcaliani/crawler-enem?logo=apache&color=lightseagreen)
+![License](https://img.shields.io/github/license/avcaliani/python-apps?logo=apache&color=lightseagreen)
 ![#](https://img.shields.io/badge/python-^3.8.x-3776AB.svg?logo=python&logoColor=white)
 ![#](https://img.shields.io/badge/spark-3.3.0-E25A1C.svg?logo=apache-spark&logoColor=white)
 
